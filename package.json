@@ -1,0 +1,38 @@
+{
+  "name": "health-care-dashboard",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build && npm run build:server",
+    "build:server": "tsc -p server/tsconfig.json",
+    "server": "node dist/server/server.js",
+    "deploy": "npm run build && npm run server"
+  },
+  "dependencies": {
+    "@angular/animations": "^18.1.0",
+    "@angular/common": "^18.1.0",
+    "@angular/compiler": "^18.1.0",
+    "@angular/core": "^18.1.0",
+    "@angular/forms": "^18.1.0",
+    "@angular/platform-browser": "^18.1.0",
+    "@angular/router": "^18.1.0",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.5.0",
+    "zone.js": "~0.14.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "socket.io": "^4.3.1",
+    "chart.js": "^3.6.0",
+    "ng2-charts": "^3.0.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.1.0",
+    "@angular/cli": "^18.1.0",
+    "@angular/compiler-cli": "^18.1.0",
+    "typescript": "~5.5.0",
+    "nodemon": "^2.0.14"
+  }
+}
